@@ -1,0 +1,28 @@
+		Creating table
+
+CREATE TABLE olympic (Name String, age int, country String, year int, close_date String, sport String, gold int, silver int, bronze int, total_medals int)
+
+ROW FORMAT DELIMITED
+
+FIELDS TERMINATED BY '\t';
+
+		Load olympic data:
+
+CREATE TABLE olympic (Name String, age int, country String, year int, close_date String, sport String, gold int, silver int, bronze int, total_medals int)
+
+ROW FORMAT DELIMITED
+
+FIELDS TERMINATED BY '\t';
+
+
+1. select country, SUM(total_medals) from olympic where sport='Swimming' GROUP BY country;  
+
+2. select country, SUM(total_medals) from olympic where sport='Swimming' GROUP BY country;  
+
+3. select country, SUM(total_medals) from olympic group by country;
+
+4. select country, SUM(gold) from olympic group by country;
+
+
+
+
